@@ -37,313 +37,420 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>JavaScript</h1>
+					<h2>as the future of progressive enhancement</h2>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small><a href="http://trodrigues.net">Tiago Rodrigues</a> / <a href="http://twitter.com/trodrigues">@trodrigues</a></small>
 					</p>
+          <aside class="notes" data-markdown>
+            * Let's talk about how to fix PE with JS
+          </aside>
 				</section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
+        <section>
+          <div data-markdown>
 					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
+## What's progressive enhancement?
 					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
+          </div>
+          <aside class="notes" data-markdown>
+            * Build a basic website
+            * Enhance its functionality
+            * But we don't do things like that anymore
+            * Let's make this happen
+          </aside>
 				</section>
 
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
+          <div data-markdown>
+					<script type="text/template">
+## How did we lose progressive enhancement?
 					</script>
+          </div>
+          <aside class="notes" data-markdown>
+	* frontend applications have been getting more and more complex
+	* mvc applications came along to help tame the complexity
+	* in the end we realized: it's easier if we keep more things in the same side
+          </aside>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
+          <h2>So why does progressive enhancement matter?</h2>
+          <p class="fragment">Acessibility</p>
+          <p class="fragment">SEO</p>
+          <p class="fragment">Performance</p>
+          <aside class="notes" data-markdown>
+            * Acessibility: not just people who turn off JS
+            * SEO
+            * Performance
+          </aside>
 				</section>
 
 				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
+            <h2>Some found alternate solutions</h2>
+            <h3 class="fragment">Others disregarded the problems</h3>
+          <aside class="notes" data-markdown>
+            * Alternate solutions, ahead
+            * Others disregarded this
+            * Some people just don't have this requirement
+          </aside>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+          <div data-markdown>
+					<script type="text/template">
+## So what are the solutions?
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+          </aside>
+				</section>
+
+				<section>
+          <h2>Go oldschool</h2>
+          <ul class="fragment">
+            <li>Backend app, server rendering</li>
+            <li>Sprinkle some JS for interactivity</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * backend app, server rendering
+            * get data from db
+            * insert data in db
+            * sprinkle some JS for interactivity
+          </aside>
+				</section>
+
+				<section>
+          <h1>Problems</h1>
+          <ul>
+            <li class="fragment">Duplicate logic</li>
+            <li class="fragment">Duplicate templates</li>
+            <li class="fragment">Cumbersome ways to update the DOM</li>
+            <li class="fragment">Or put an MVC framework on top of it</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * multitude of technologies on the backend
+            * templates not so common to duplicate but still happens
+            * rerender templates or update DOM attrs
+            * bring in an mvc framework
+          </aside>
+				</section>
+
+				<section>
+          <h2>Single page apps</h2>
+          <ul class="fragment">
+            <li>Hide data management behind an API</li>
+            <li>Build a complete app on the frontend</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * data management on API
+            * frontend app is a client
+          </aside>
+				</section>
+
+				<section>
+          <h2>Problems</h2>
+          <ul>
+            <li class="fragment">No JS, no app</li>
+            <li class="fragment">No out of the box SEO</li>
+            <li class="fragment">Less performance on first render</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * doesn't work without JS
+            * no SEO by default
+            * slower first rendering
+          </aside>
+				</section>
+
+				<section>
+          <h2>And that might be ok</h2>
+          <aside class="notes" data-markdown>
+            * check your requirements. an SPA might be ideal (ex: Google Docs, Contentful)
+          </aside>
+				</section>
+
+				<section>
+          <h2>Fixing SPAs</h2>
+          <ul>
+            <li class="fragment"><a href="https://github.com/jed/rndr.me">https://github.com/jed/rndr.me</a></li>
+            <li class="fragment"><a href="http://prerender.io/">http://prerender.io/</a></li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * still longer response time with server browser render
+            * SEO only
+          </aside>
+				</section>
+
+				<section>
+          <div data-markdown>
+					<script type="text/template">
+## We need to rethink the way we build webapps
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+          </aside>
+				</section>
+
+				<section>
+          <div data-markdown>
+					<script type="text/template">
+## You're probably already building APIs anyway.
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+          </aside>
+				</section>
+
+				<section>
+          <div data-markdown>
+					<script type="text/template">
+## Our frontend apps need to be client/server hybrids
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+            * your frontend includes the server that serves the UI
+            * frontend app, part server, part frontend
+            * node.js as a server
+            * both talk to the api
+          </aside>
+				</section>
+
+				<section>
+          <a href="http://www.nczonline.net/blog/2013/10/07/node-js-and-the-new-web-front-end/">http://www.nczonline.net/blog/2013/10/07/node-js-and-the-new-web-front-end/</a>
+          <aside class="notes" data-markdown>
+            * great timing on this article
+          </aside>
+				</section>
+
+				<section>
+          <div data-markdown>
+					<script type="text/template">
+## Existing solutions
+* https://github.com/airbnb/rendr
+* http://www.meteor.com/faq/can-meteor-serve-static-html
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+            * rendr is weird, not finished, use case specific
+            * meteor only doing SEO, no initial HTML yet
+          </aside>
+				</section>
+
+				<section>
+          <div data-markdown>
+					<script type="text/template">
+## But these solutions are a bit monolithic
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+            * Making a lot of decisions for you
+            * Not for all use cases
+            * Let's mix and match
+          </aside>
+				</section>
+
+				<section>
+          <div data-markdown>
+					<script type="text/template">
+## The Top10 case study
+http://top10.me
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+            * 2012 app
+            * SEO mattered a lot
+            * Mobile performance too, responsive app
+          </aside>
+				</section>
+
+				<section>
+          <h2>Top 10</h2>
+          <ul>
+            <li>REST API (Scala, Cassandra)</li>
+            <li class="fragment">JS client</li>
+            <li class="fragment">Same interface, different communication layer</li>
+            <li class="fragment">Write models on top of this interface</li>
+            <li class="fragment">Handlebars templates</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * rest api
+            * js client
+            * same interface on js client, different implementation
+            * models on top of js api
+            * handlebars
+          </aside>
+				</section>
+
+				<section>
+          <h2>Top 10</h2>
+          <ul>
+            <li class="fragment">Routing was still different</li>
+            <li class="fragment">DOM manipulation code only served to frontend</li>
+            <li class="fragment">Request handling logic only on backend</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * still a few issues
+          </aside>
+				</section>
+
+				<section>
+          <h2>Top 10</h2>
+          <ul>
+            <li class="fragment">Not perfect, but helped development time a lot</li>
+            <li class="fragment">High percentage of code share (also with an admin app)</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * we never really did performance measurements though
+          </aside>
+				</section>
+
+				<section>
+          <h2>What's the current state of affairs?</h2>
+          <ul>
+            <li class="fragment">Most components are almost there</li>
+            <li class="fragment">We still need some bits of glue</li>
+            <li class="fragment">And those should be provided by components</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * Components are almost there
+            * But we still need some glue
+            * Let's create smaller components, not frameworks
+            * Everyone has different needs, pluggable components for each use case
+            * Middlewares, data layers, views, etc
+          </aside>
+				</section>
+
+				<section>
+          <h2>Data layers</h2>
+          <ul>
+            <li class="fragment">Just talk to a REST API</li>
+            <li class="fragment">Build a lightweight access layer</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * Explain our Contentful data layer
+            * jQuery.ajax, $http
+            * mikeal/request
+          </aside>
+				</section>
+
+				<section>
+          <h2>Routing</h2>
+          <ul>
+            <li class="fragment">Routing is almost there</li>
+            <li class="fragment">It's fairly easy to share routes anyway</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * almost there
+            * director
+            * route.js/route-recognizer
+            * we might still need a better router
+          </aside>
+				</section>
+
+				<section>
+          <h2>Views</h2>
+          <ul>
+            <li class="fragment">Views have been troublesome</li>
+            <li class="fragment">Server only renders template</li>
+            <li class="fragment">Client renders and attaches behavior</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * but there are some solutions
+          </aside>
+				</section>
+
+				<section>
+          <div data-markdown>
+					<script type="text/template">
+## React.js is a solution
+					</script>
+          </div>
+          <aside class="notes" data-markdown>
+          </aside>
+				</section>
+
+				<section>
+          <h2>React.js</h2>
+          <ul>
+            <li class="fragment">View library</li>
+            <li class="fragment">Developed by Facebook</li>
+            <li class="fragment">Markup, data binding and DOM behavior</li>
+            <li class="fragment">Uses a pre-processed HTML variant (JSX)</li>
+            <li class="fragment">Virtual DOM and Event system</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * Troublesome unveiling
+            * Template + DOM logic, maybe not so bad
+            * Diff updating on DOM
+            * Node rendering for free (almost)
+          </aside>
+				</section>
+
+				<section>
+          <h2>React.js</h2>
+          <ul>
+            <li class="fragment"><a href="https://github.com/facebook/react-page">https://github.com/facebook/react-page</a></li>
+            <li class="fragment"><a href="https://github.com/facebook/react-page-middleware">https://github.com/facebook/react-page-middleware</a></li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * server rendering app framework
+            * not very great, making a lot of decisions for you and unstable
+            * some alternate modules showing up (browserify, etc)
+            * was going to show a demo app with contentful
+            * but this broke on me
+          </aside>
+				</section>
+
+				<section>
+          <h2>More people are taking note</h2>
+          <ul>
+            <li class="fragment">Airbnb</li>
+            <li class="fragment">Coursera</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * backbonish implementations
+            * backbone also being split
+          </aside>
+				</section>
+
+				<section>
+          <h2>So how do we put this together?</h2>
+          <ul>
+            <li class="fragment">Data layer</li>
+            <li class="fragment">View layer</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * One view layer only, with access to data layer
+          </aside>
+				</section>
+
+				<section>
+          <h2>So how do we put this together?</h2>
+          <ul>
+            <li class="fragment">Route handlers create instances of view layer</li>
+            <li class="fragment">Feed view layer with initial data</li>
+            <li class="fragment">Same handlers for browser and server (?)</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * You might still want to render some parts from the server
+            * This gives you freedom
+            * Route layer handling of requests should be transparent
+          </aside>
+				</section>
+
+				<section>
+          <h2>There's still some way to go</h2>
+          <h3 class="fragment">So let's make it happen!</h3>
+          <aside class="notes" data-markdown>
+            * Let's make this happen
+          </aside>
+				</section>
+
+				<section>
+          <h2>Thank you!</h2>
+          <p>Come talk to me! <a href="http://contentful.com">Contentful</a> is hiring!</p>
+          <aside class="notes" data-markdown>
+          </aside>
 				</section>
 
 			</div>
@@ -358,13 +465,13 @@ function linkify( selector ) {
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
