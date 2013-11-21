@@ -6,3 +6,5 @@ Based on [reveal.js](https://travis-ci.org/hakimel/reveal.js)
 
 To see the slides, go to [http://5minfork.com/](http://5minfork.com/)
 and just paste the repo url or clone it and `npm install; npm start`
+
+Press `s` for speaker notes!
