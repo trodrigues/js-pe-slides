@@ -57,7 +57,6 @@
             * Build a basic website
             * Enhance its functionality
             * But we don't do things like that anymore
-            * Let's make this happen
           </aside>
 				</section>
 
@@ -69,8 +68,8 @@
           </div>
           <aside class="notes" data-markdown>
 	* frontend applications have been getting more and more complex
-	* mvc applications came along to help tame the complexity
-	* in the end we realized: it's easier if we keep more things in the same side
+	* mvc frameworks came along to help tame the complexity
+	* we realized it's easier if we keep more things in the same side
           </aside>
 				</section>
 
@@ -92,14 +91,14 @@
           <aside class="notes" data-markdown>
             * Alternate solutions, ahead
             * Others disregarded this
-            * Some people just don't have this requirement
+            * Some products might not require progressive enhancement
           </aside>
 				</section>
 
 				<section>
           <div data-markdown>
 					<script type="text/template">
-## So what are the solutions?
+## How do we build web apps?
 					</script>
           </div>
           <aside class="notes" data-markdown>
@@ -107,15 +106,15 @@
 				</section>
 
 				<section>
-          <h2>Go oldschool</h2>
+          <h2>Traditional web apps</h2>
           <ul class="fragment">
             <li>Backend app, server rendering</li>
             <li>Sprinkle some JS for interactivity</li>
           </ul>
           <aside class="notes" data-markdown>
-            * backend app, server rendering
-            * get data from db
-            * insert data in db
+            * backend app, gets data from db
+            * inserts data in db
+            * server rendering
             * sprinkle some JS for interactivity
           </aside>
 				</section>
@@ -129,9 +128,9 @@
             <li class="fragment">Or put an MVC framework on top of it</li>
           </ul>
           <aside class="notes" data-markdown>
-            * multitude of technologies on the backend
+            * duplicate logic, multitude of technologies on the backend
             * templates not so common to duplicate but still happens
-            * rerender templates or update DOM attrs
+            * DOM updates: rerender templates or update DOM attrs
             * bring in an mvc framework
           </aside>
 				</section>
@@ -156,6 +155,7 @@
             <li class="fragment">Less performance on first render</li>
           </ul>
           <aside class="notes" data-markdown>
+            * problems mentioned before
             * doesn't work without JS
             * no SEO by default
             * slower first rendering
@@ -165,7 +165,9 @@
 				<section>
           <h2>And that might be ok</h2>
           <aside class="notes" data-markdown>
-            * check your requirements. an SPA might be ideal (ex: Google Docs, Contentful)
+            * check your requirements
+            * for some use cases, an SPA might be ideal
+            * (ex: Google Docs, Contentful)
           </aside>
 				</section>
 
@@ -176,8 +178,8 @@
             <li class="fragment"><a href="http://prerender.io/">http://prerender.io/</a></li>
           </ul>
           <aside class="notes" data-markdown>
-            * still longer response time with server browser render
-            * SEO only
+            * rndr: still longer response time with server browser render
+            * prerender: SEO only
           </aside>
 				</section>
 
@@ -198,6 +200,8 @@
 					</script>
           </div>
           <aside class="notes" data-markdown>
+            * for SPAs
+            * for regular webapps
           </aside>
 				</section>
 
@@ -312,6 +316,7 @@ http://top10.me
             <li class="fragment">And those should be provided by components</li>
           </ul>
           <aside class="notes" data-markdown>
+            * how can we build better apps?
             * Components are almost there
             * But we still need some glue
             * Let's create smaller components, not frameworks
@@ -327,7 +332,6 @@ http://top10.me
             <li class="fragment">Build a lightweight access layer</li>
           </ul>
           <aside class="notes" data-markdown>
-            * Explain our Contentful data layer
             * jQuery.ajax, $http
             * mikeal/request
           </aside>
@@ -351,21 +355,11 @@ http://top10.me
           <h2>Views</h2>
           <ul>
             <li class="fragment">Views have been troublesome</li>
-            <li class="fragment">Server only renders template</li>
-            <li class="fragment">Client renders and attaches behavior</li>
+            <li class="fragment">Server only needs to render templates</li>
+            <li class="fragment">Client needs to render and attach behavior</li>
           </ul>
           <aside class="notes" data-markdown>
             * but there are some solutions
-          </aside>
-				</section>
-
-				<section>
-          <div data-markdown>
-					<script type="text/template">
-## React.js is a solution
-					</script>
-          </div>
-          <aside class="notes" data-markdown>
           </aside>
 				</section>
 
@@ -396,13 +390,12 @@ http://top10.me
             * server rendering app framework
             * not very great, making a lot of decisions for you and unstable
             * some alternate modules showing up (browserify, etc)
-            * was going to show a demo app with contentful
             * but this broke on me
           </aside>
 				</section>
 
 				<section>
-          <h2>More people are taking note</h2>
+          <h2>More companies are getting into it</h2>
           <ul>
             <li class="fragment">Airbnb</li>
             <li class="fragment">Coursera</li>
@@ -416,11 +409,12 @@ http://top10.me
 				<section>
           <h2>So how do we put this together?</h2>
           <ul>
-            <li class="fragment">Data layer</li>
             <li class="fragment">View layer</li>
+            <li class="fragment">Data layer</li>
           </ul>
           <aside class="notes" data-markdown>
-            * One view layer only, with access to data layer
+            * Start with the view layer
+            * Make it talk to the data layer
           </aside>
 				</section>
 
@@ -432,6 +426,7 @@ http://top10.me
             <li class="fragment">Same handlers for browser and server (?)</li>
           </ul>
           <aside class="notes" data-markdown>
+            * Route handlers can be used from either side
             * You might still want to render some parts from the server
             * This gives you freedom
             * Route layer handling of requests should be transparent
@@ -440,9 +435,10 @@ http://top10.me
 
 				<section>
           <h2>There's still some way to go</h2>
-          <h3 class="fragment">So let's make it happen!</h3>
+          <h3 class="fragment">Let's make it happen!</h3>
           <aside class="notes" data-markdown>
             * Let's make this happen
+            * Help build more components
           </aside>
 				</section>
 
